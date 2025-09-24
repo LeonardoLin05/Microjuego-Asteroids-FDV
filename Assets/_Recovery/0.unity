@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc966e50e81a53743a859bb95637c645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  thrustForce: 5
+  thrustForce: 100
   rotationSpeed: 10
 --- !u!1 &832575517
 GameObject:
