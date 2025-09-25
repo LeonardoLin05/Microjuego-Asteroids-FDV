@@ -3,8 +3,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    public float thrustForce;
-    public float rotationSpeed;
+    private float thrustForce = 100f;
+    private float rotationSpeed = 120f;
+
+    public GameObject gun, bulletPrefab;
 
     private Rigidbody _rigid;
 
@@ -25,6 +27,15 @@ public class Player : MonoBehaviour
         _rigid.AddForce(thrustDirection * thrust * thrustForce);
 
         transform.Rotate(Vector3.forward, -rotation * rotationSpeed);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GameObject bullet = Instantiate(bulletPrefab, gun.transform.position, Quaternion.identity);
+
+            Bullet balaScript = bullet.GetComponent<Bullet>();
+
+            balaScript.tarjectVector = transform.right;
+        }
 
     }
 }
