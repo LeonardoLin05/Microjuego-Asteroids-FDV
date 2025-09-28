@@ -7,8 +7,8 @@ public class Bullet : MonoBehaviour
     private float speed = 5f;
     public Vector3 tarjectVector;
 
-    private float xBorderLimit = 12.5f;
-    private float yBorderLimit = 5.8f;
+    private float xBorderLimit = 10f;
+    private float yBorderLimit = 5.5f;
 
     // Update is called once per frame
     void Update()

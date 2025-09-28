@@ -13,8 +13,8 @@ public class Player : MonoBehaviour
 
     public static int SCORE = 0;
 
-    private float xBorderLimit = 12.5f;
-    private float yBorderLimit = 5.8f;
+    private float xBorderLimit = 10f;
+    private float yBorderLimit = 5.5f;
 
     void Awake()
     {
